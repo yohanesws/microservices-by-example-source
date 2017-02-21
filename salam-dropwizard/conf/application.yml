@@ -8,8 +8,8 @@ helloapp:
 greeter:
 
   saying: ${GREETER_SAYING:-Salam dari Dropwizard}
-  host: ${GREETER_BACKEND_HOST:-localhost}
-  port: ${GREETER_BACKEND_PORT:-8080}
+  host: ${GREETER_BACKEND_HOST:-backend}
+  port: ${GREETER_BACKEND_PORT:-80}
 
 server:
   applicationConnectors:
