@@ -10,9 +10,9 @@
   <packaging>pom</packaging>
 
   <modules>
-    <module>hola-springboot</module>
-    <module>hola-dropwizard</module>
-    <module>hola-wildflyswarm</module>
+    <module>salam-springboot</module>
+    <module>salam-dropwizard</module>
+    <module>salam-wildflyswarm</module>
     <module>backend</module>
   </modules>
 
