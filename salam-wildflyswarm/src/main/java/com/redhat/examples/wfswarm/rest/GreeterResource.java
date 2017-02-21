@@ -50,11 +50,11 @@ public class GreeterResource {
     private String saying;
 
     @Inject
-    @ConfigProperty(name = "GREETING_BACKEND_SERVICE_HOST", defaultValue = "localhost")
+    @ConfigProperty(name = "GREETING_BACKEND_SERVICE_HOST", defaultValue = "backend")
     private String backendServiceHost;
 
     @Inject
-    @ConfigProperty(name = "GREETING_BACKEND_SERVICE_PORT", defaultValue = "8080")
+    @ConfigProperty(name = "GREETING_BACKEND_SERVICE_PORT", defaultValue = "80")
     private int backendServicePort;
 
     private String useKubernetesDiscovery;

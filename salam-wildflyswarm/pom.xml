@@ -173,7 +173,7 @@
           </images>
         </configuration>
       </plugin>
-      <plugin>
+      <!-- <plugin>
         <groupId>io.fabric8</groupId>
         <artifactId>fabric8-maven-plugin</artifactId>
         <version>2.2.100</version>
@@ -193,6 +193,11 @@
             </goals>
           </execution>
         </executions>
+      </plugin> -->
+       <plugin>
+        <groupId>io.fabric8</groupId>
+        <artifactId>fabric8-maven-plugin</artifactId> 
+        <version>3.2.18</version>
       </plugin>
     </plugins>
   </build>

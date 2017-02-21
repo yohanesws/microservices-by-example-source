@@ -9,6 +9,7 @@ Simple SpringBoot Microservice application
 
 ##Environment Variable:
 Please look conf/application.yml
+
 1. GREETING_SAYING 
 2. GREETING_BACKEND_SERVICE_HOST
 3. GREETING_BACKEND_SERVICE_PORT
