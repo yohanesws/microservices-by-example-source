@@ -46,7 +46,7 @@ import java.util.Arrays;
 public class GreeterResource {
 
     @Inject
-    @ConfigProperty(name = "WF_SWARM_SAYING", defaultValue = "Salam")
+    @ConfigProperty(name = "WF_SWARM_SAYING", defaultValue = "Salam WF Swarm")
     private String saying;
 
     @Inject

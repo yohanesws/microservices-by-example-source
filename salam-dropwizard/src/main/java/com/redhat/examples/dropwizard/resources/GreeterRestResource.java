@@ -24,6 +24,8 @@ import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.client.Client;
 
+import org.glassfish.jersey.client.ClientProperties;
+
 /**
  * Created by ceposta 
  */
@@ -46,14 +48,17 @@ public class GreeterRestResource {
     @GET
     @Timed
     public String greeting() {
+    	System.out.println("Sending to: " + backendServiceHost+":"+backendServicePort);
         String backendServiceUrl = String.format("http://%s:%d",  backendServiceHost,backendServicePort);
         System.out.println("Sending to: " + backendServiceUrl);
 
 
         BackendDTO backendDTO = client.target(backendServiceUrl)
-                .path("api")
-                .path("backend")
-                .queryParam("greeting", saying)
+        		.path("api")
+        		.path("backend")
+        		.queryParam("greeting", "dropwizard")
+                .property(ClientProperties.CONNECT_TIMEOUT, 10000)
+                .property(ClientProperties.READ_TIMEOUT, 10000)
                 .request().accept("application/json").get(BackendDTO.class);
 
         return backendDTO.getGreeting() + " at host: " + backendDTO.getIp();

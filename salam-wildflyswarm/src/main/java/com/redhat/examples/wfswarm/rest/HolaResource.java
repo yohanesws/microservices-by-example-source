@@ -13,12 +13,12 @@ import javax.ws.rs.Produces;
 public class HolaResource {
 
 	@Inject
-	@ConfigProperty(name = "WF_SWARM_SAYING", defaultValue = "Hola")
+	@ConfigProperty(name = "WF_SWARM_SAYING", defaultValue = "Salam")
 	private String saying;
 
 	@GET
 	@Produces("text/plain")
 	public Response doGet() {
-		return Response.ok(saying + " from WF Swarm").build();
+		return Response.ok(saying + " dari WF Swarm").build();
 	}
 }

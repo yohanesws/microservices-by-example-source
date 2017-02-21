@@ -14,4 +14,8 @@ greeter:
 server:
   applicationConnectors:
     - type: http
-      port: 8080
+      port: 9005
+  adminConnectors:
+    - type: http
+      port: 9006
+   
