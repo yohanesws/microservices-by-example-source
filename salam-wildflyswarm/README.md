@@ -2,6 +2,14 @@
 
 Simple Wildfly Swarm Microservice application
 
+##Create the project for first time
+
+There 3 Option to create the project for first time:
+
+1. Valilla Java Application with org.wildfly.swarm Maven Plugin and Depedency
+2. Using [Jboss Forge](http://forge.jboss.org/)
+3. Using [Web Generator](http://wildfly-swarm.io/generator/)
+
 ##How to run locally:
 1. mvn clean install wildfly-swarm:run -Dswarm.port.offset=100
 2. open http://localhost:8180/api/salam or http://localhost:8180/api/greeting

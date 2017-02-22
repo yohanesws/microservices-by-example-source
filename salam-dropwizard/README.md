@@ -2,6 +2,9 @@
 
 Simple SpringBoot Microservice application
 
+##Create the project for first time
+mvn -B archetype:generate \ -DarchetypeGroupId=io.dropwizard.archetypes \ -DarchetypeArtifactId=java-simple -DarchetypeVersion=0.9.2 \ -DgroupId=com.redhat.examples.dropwizard -DartifactId=Salam-dropwizard -Dversion=1.0 -Dname=SalamDropwizard
+
 ##How to run locally:
 1. mvn clean install spring-boot:run -Dserver.port=9090
 2. open http://localhost:9005/api/salam or http://localhost:9005/api/greeting

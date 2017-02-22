@@ -2,6 +2,16 @@
 
 Simple SpringBoot Microservice application
 
+##Create the project for first time
+
+First Install Spring CLI
+
+$ spring --version
+
+spring init --build maven --groupId com.redhat.examples \ --version 1.0 --java-version 1.8 --dependencies web \ --name hola-springboot salam-springboot
+
+Or using Spring Web [Generator](http://start.spring.io/)
+
 ##How to run locally:
 1. mvn clean install spring-boot:run -Dserver.port=9090
 2. open http://localhost:9090/api/salam or http://localhost:9090/api/greeting
