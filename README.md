@@ -10,3 +10,7 @@ https://developers.redhat.com/promotions/microservices-for-java-developers/
 3. [Wildfly Swarm] (http://wildfly-swarm.io/) - [Example] (salam-wildflyswarm/README.md)
 
 all example will need simualted backend service that can be [find here](backend/README.md)
+
+all example need CDK or Openshift Origin please refer:
+[RH CDK](https://developers.redhat.com/products/cdk/overview/)
+[OpenShift](https://www.openshift.org/)
